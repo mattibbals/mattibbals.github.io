@@ -9,7 +9,7 @@ class App extends Component {
       isListView : false,
       listingDetail : null
     }
-    fetch('http://dev1-sample.azurewebsites.net/properties.json', {mode: "cors"}) 
+    fetch('//dev1-sample.azurewebsites.net/properties.json', {mode: "cors"}) 
     .then(response => response.json())
     .then(response => {
       this.setState({listings: response.properties.filter(function(listing) {return listing.visibility === 'Public'})});
