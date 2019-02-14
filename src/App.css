@@ -1,33 +1,154 @@
 .App {
   text-align: center;
+  font: 600 13px/20px Muli,sans-serif;
+}
+.App button {
+  clear:both;
+  margin-bottom:10px;
+}
+.App .property_listing {
+  border:1px solid #cccccc;
+  padding:5px;
+}
+.App .property_listing:hover {
+  cursor: pointer;
+}
+.App .property_listing img.mainImg {
+  margin:0 auto 0 auto;
+}
+.App .grid_view .property_listing {
+  float: left;
+  width:220px;
+  margin:10px;
+}
+.App .grid_view .property_listing img.mainImage {
+  height:125px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+.App .list_view .property_listing .img_container {
+  width: 100px;
+  height: 50px;
+  border:1px solid #f0f0f0;
+  margin-right:10px;
+}
+.App .list_view .property_listing {
+  clear:both;
+  height:50px;
+}
+.App .list_view .property_listing img.mainImage {
+  height:50px;
+}
+.App .list_view .property_listing div {
+  float:left;
+}
+.App .list_view .property_listing > div:after {
+  content: '\00a0|\00a0'
+}
+.App .list_view .property_listing .img_container:after {
+  content: ''
+}
+.App .list_view .property_listing .address div:before {
+  content: "\00a0";
+}
+.App .carousel .carouselButtons {
+  position:relative;
+  top:200px;
+  width:75%;
+  margin: 0 auto 0 auto;
+  z-index:1;
+}
+.App .carousel .carouselWindow {
+  width:670px;
+  height:457px;
+  overflow:hidden;
+  margin:0 auto 0 auto;
+}
+.App .carousel .carouselWindow img {
+  border:1px solid #cccccc;
+  float:left;
+  padding: 5px;
+  margin: 5px auto 5px auto;
+  width:638px;
+}
+.App .carousel .carouselButtons button.carouselLeft {
+  float:left;
+  clear:none;
+}
+.App .carousel .carouselButtons button.carouselRight {
+  float:right;
+  clear:none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App .carousel .carouselWindow table {
+  position:relative;
+}
+.App .carousel .carouselWindow table td {
+  padding:0 15px 0 11px;
+  width:650px;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes p0to1 {
+  from {left: 0px;}
+  to {left: -680px;}
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes p1to0 {
+  from {left: -680px;}
+  to {left: 0px;}
+}
+@keyframes p1to2 {
+  from {left: -680px;}
+  to {left: -1360px;}
+}
+@keyframes p2to1 {
+  from {left: -1360px;}
+  to {left: -680px;}
+}
+@keyframes p2to3 {
+  from {left: -1360px;}
+  to {left: -2040px;}
+}
+@keyframes p3to2 {
+  from {left: -2040px}
+  to {left: -1360px;}
+}
+@keyframes p3to4 {
+  from {left: -2040px;}
+  to {left: -2720px;}
+}
+@keyframes p4to3 {
+  from {left: -2720px;}
+  to {left: -2040px;}
+}
+@keyframes p4to5 {
+  from {left: -2720px;}
+  to {left: -3400px;}
+}
+@keyframes p5to4 {
+  from {left: -3400px;}
+  to {left: -2720px;}
+}
+@keyframes p5to6 {
+  from {left: -3400px;}
+  to {left: -4080px;}
+}
+@keyframes p6to5 {
+  from {left: -4080px;}
+  to {left: -3400px;}
+}
+@keyframes p6to7 {
+  from {left: -4080px;}
+  to {left: -4760px;}
+}
+@keyframes p7to6 {
+  from {left: -4760px;}
+  to {left: -4080px;}
+}
+@keyframes p7to8 {
+  from {left: -4760px;}
+  to {left: -5440px;}
+}
+@keyframes p8to7 {
+  from {left: -5440px;}
+  to {left: -4760px;}
 }
